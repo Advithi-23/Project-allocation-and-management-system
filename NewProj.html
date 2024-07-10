@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Create New Project</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <!-- <script>
+        $(document).ready(function() {
+            $(".hamburger").click(function() {
+                $(".wrapper").toggleClass("collapse");
+            });
+        });
+    </script> -->
+
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="top_navbar">
+            <div class="hamburger">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </div>
+            <div class="top_menu">
+                <div class="logo">
+                    PMS
+                </div>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-search"></i></a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <i class="fa fa-bell"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../users/userdetails.htm">
+                            <i class="fa fa-user"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <a href="../boards/dashboard.jsp"><i class="fa fa-align-justify" aria-hidden="true"></i>&nbsp;&nbsp;
+                        Backlog</a>
+                </li>
+
+                <li>
+                    <a href="../boards/dashboard.jsp"><i class="fa fa-desktop" aria-hidden="true"></i>
+                        &nbsp;&nbsp;
+                        Board</a>
+                </li>
+
+                <li>
+                    <a href="../reports/report.html"><i class="fa fa-bar-chart" aria-hidden="true"></i>
+                        &nbsp;
+                        &nbsp;
+                        Report</a>
+                </li>
+
+                
+
+                <li>
+                    <a href="../issues/new.html"> <i class="fa fa-files-o" aria-hidden="true"></i>&nbsp; New Task / Issue</a>
+                </li>
+                
+                <li>
+                        <a href="../issues/NewProj.html"> <i class="fa fa-files-o" aria-hidden="true"></i>&nbsp; New Project</a>
+                    </li>
+
+                <li>
+
+                    <a href="../settings/settings.html"> <i class="fa fa-cogs" aria-hidden="true"></i> &nbsp;&nbsp; Settings</a>
+                </li>
+
+                <li>
+
+                    <a href="../users/userdetails.jsp"> <i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;&nbsp; My Profile</a>
+                </li>
+
+                <li>
+
+                    <a href="../login/login.html">
+                        <i class="fa fa-sign-out" aria-hidden="true"></i> &nbsp;&nbsp; Logout
+                    </a>
+                </li>
+                <br>
+
+            </ul>
+        </div>
+
+
+        <div class="main" align="center">
+        <h1>New Project</h1>
+                    <!-- HTML form for data input -->
+        <form action="project.jsp" method="post">
+        
+    <label for="proj_id">proj_id:</label>
+    <input type="text" id="proj_id" name="proj_id" required><br>
+    
+    <label for="proj_name">proj_name:</label>
+    <input type="text" id="proj_name" name="proj_name" required><br>
+    
+    <label for="description">description:</label>
+    <input type="text" id="description" name="description" required><br>
+    
+    <label for="start_date">Start Date:</label>
+    <input type="date" id="start_date" name="start_date" required><br>
+    
+    <label for="end_date">End Date:</label>
+    <input type="date" id="end_date" name="end_date" required><br>
+    
+    <label for="manager_id">Manager ID:</label>
+    <input type="text" id="manager_id" name="manager_id" required><br>
+    
+   <br>
+    
+    <button type="submit">Submit</button>
+</form>
+
+</body>
+
+</html>

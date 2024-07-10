@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- <script>
+        $(document).ready(function() {
+            $(".hamburger").click(function() {
+                $(".wrapper").toggleClass("collapse");
+            });
+        });
+    </script> -->
+</head>
+
+<body>
+  
+        <div class="wrapper">
+            <div class="top_navbar">
+                <div class="hamburger">
+                    <div class="one"></div>
+                    <div class="two"></div>
+                    <div class="three"></div>
+                </div>
+                <div class="top_menu">
+                    <div class="logo">
+                        PMS
+                    </div>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-search"></i></a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <i class="fa fa-bell"></i>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../users/userdetails.htm">
+                                <i class="fa fa-user"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa fa-align-justify" aria-hidden="true"></i>&nbsp;&nbsp;
+                            Backlog</a>
+                    </li>
+
+                    <li>
+                        <a href="#"><i class="fa fa-desktop" aria-hidden="true"></i>
+                            &nbsp;&nbsp;
+                            Board</a>
+                    </li>
+
+                    <li>
+                        <a href="../reports/report.html"><i class="fa fa-bar-chart" aria-hidden="true"></i>
+                            &nbsp;
+                            &nbsp;
+                            Report</a>
+                    </li>
+
+                    <li>
+                        <a href="../issues/new.html"> <i class="fa fa-files-o" aria-hidden="true"></i>&nbsp; New Task / Issue</a>
+                    </li>
+
+                    <li>
+
+                        <a href="../settings/settings.html"> <i class="fa fa-cogs" aria-hidden="true"></i> &nbsp;&nbsp; Settings</a>
+                    </li>
+
+                    <li>
+
+                        <a href="../users/userdetails.jsp"> <i class="fa fa-user-circle" aria-hidden="true"></i>&nbsp;&nbsp; My Profile</a>
+                    </li>
+
+                    <li>
+
+                        <a href="../login/login.html">
+                            <i class="fa fa-sign-out" aria-hidden="true"></i> &nbsp;&nbsp; Logout
+                        </a>
+                    </li>
+                    <br>
+
+                </ul>
+            </div>
+			 
+            <div class="main_container">
+                <div class="card-containers">
+                    <div class="levels">
+                        <span class="leveless">TO DO</span>
+                        <form action="dashboard.jsp">
+                        <div class="todo-item">
+                            <section>
+                                <!-- Todo content -->
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="levels">
+                        <span class="leveless">In-Progress</span>
+                        <div class="Inprogress-item">
+                            <section>
+                                <!-- In-Progress content -->
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="levels">
+                        <span class="leveless">Code Review</span>
+                        <div class="codereview-item">
+                            <section>
+                                <!-- Code Review content -->
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="levels">
+                        <span class="leveless">In-Testing</span>
+                        <div class="intesting-item">
+                            <section>
+                                <!-- In-Testing content -->
+                            </section>
+                        </div>
+                    </div>
+
+                    <div class="levels">
+                        <span class="leveless">Done</span>
+                        <div class="done-item">
+                            <section>
+                                <!-- Done content -->
+                            </section>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+            </div>
+           
+        </div>
+    
+
+</body>
+
+</html>
